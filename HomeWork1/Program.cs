@@ -60,7 +60,7 @@ void Check(int[] array)
     if (result == -1) Console.Write("Число НЕполиндром");
 }
 
-Console.Write("Введите пятизначное число, и мы проверим является ли оно палиндромом: ");
+Console.Write("Введите число, и мы проверим является ли оно палиндромом: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int[] array = NumbersToArray(number);
