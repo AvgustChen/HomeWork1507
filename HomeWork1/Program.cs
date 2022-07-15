@@ -34,9 +34,14 @@ int[] NumbersToArray(int number) // преобразуем в массив
 {
     string str = number.ToString();
     int[] num = new int[str.Length];
-    for (int i = 0; i < str.Length; i++) // Заполняем массив числами
+    int i = 0;
+    while (i < str.Length) // Заполняем массив числами
     {
-        num[i] = str[i];
+        if (i < str.Length)
+        {
+            num[i] = str[i];
+        }
+        i++;
     }
     return num;
 }
